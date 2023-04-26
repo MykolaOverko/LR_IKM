@@ -84,7 +84,7 @@ resource "google_compute_subnetwork" "fishing_subnetwork"{
 resource "google_compute_instance" "vm_instance" {
   name         = "cod-instance"
   machine_type = "e2-micro"
-  tags = ["Khai","University","Test","DevOps","546","Fishing","Studying","Learning"]
+  tags = ["khai", "university", "test", "devops", "group-546", "fishing", "studying", "learning"]
   
   boot_disk {
     initialize_params {
