@@ -1,3 +1,7 @@
+# Мета роботи
+
+За допомогою Terraform максимально оптимізувати процес створення віртуальної машини у сабнетворк в новому проекті. Пояснити internal та external IP-адреси.
+
 # Хід роботи
 
 По-перше потрібно встановити terraform. Це можна виконати за допомогою Chocolatey. У Windows PowerShell напишемо таку команду:
@@ -80,7 +84,7 @@ resource "google_compute_subnetwork" "fishing_subnetwork"{
 resource "google_compute_instance" "vm_instance" {
   name         = "cod-instance"
   machine_type = "e2-micro"
-  tags = ["Khai","University","Test","DevOps","546","Fishing","Studying","Learning"]
+  tags = ["khai", "university", "test", "devops", "group-546", "fishing", "studying", "learning"]
   
   boot_disk {
     initialize_params {
@@ -186,3 +190,7 @@ terraform destroy
 ![](screenshots/vpc-gone.png)
 
 Перевірка пройшла успішно, тому можна вважати, що робота виконана.
+
+Висновок
+
+Terraform використовують, щоб керувати ресурсами різних клауд сервісів за допомогою їх API. Це дозволяє зручно автоматизувати процеси, які цього потребують (наприклад створення мереж або віртуальних машин).
