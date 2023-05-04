@@ -103,7 +103,7 @@ sudo apt install git
 sudo apt install openjdk-17-jre
 ```
 
-Слідуємо за інструкцієї по встановленню Jenkins.
+Слідуємо за інструкцією по встановленню Jenkins.
 
 ```
 curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
